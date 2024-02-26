@@ -16,6 +16,27 @@
         <input type="reset" value="Reset">
     </form>
     <p>Jika anda mengklik tombol "Kirim", data formulis akan dikirim ke halaman bernama "/action_page.php".</p>
-    <p>kode html tersebut digunakan untuk membuat formulir sederhana dengan memasukkan nama depan dan nama belakang.</p>
+    
+    <form action="/action_page.php" method="post" target="_blank">
+        <label for="depan">Nama Depan:</label'><br>
+        <input type="text" id="depan" name ="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama Belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+        <input type="submit" value="Kirim ">
+        <input type="reset" value="Reset">
+    </form>
+    <p>Jika anda mengklik tombol "kirim", formulir akan terkirim ke dalam tab atau jendela baru ("_blank")</p>
+                
+    form action="/action_page.php" method="get" target="_self">
+        <label for="depan">Nama Depan:</label'><br>
+        <input type="text" id="depan" name ="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama Belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+        <input type="submit" value="Kirim ">
+        <input type="reset" value="Reset">
+    </form>
+    <p>Formulir akan terkirim ke tab atau jendela yang sama ("_self").</p>
+    <br>
+    <p>Kode html tersebut digunakan untuk membuat formulir sederhana dengan memasukkan nama depan dan nama belakang.</p>
 </body>
 </html>
